@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "205094804721",
+    "project_id": "homework-a17b9",
+    "storage_bucket": "homework-a17b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:205094804721:android:f42c2f4256d746e5a85d50",
+        "android_client_info": {
+          "package_name": "de.pacheco.homework"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "205094804721-597jsk3vb3uaaeq43rr3f8ftg45e1ahp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6eKmBt48YVic4Y4YH3H63IjuxSaq_voI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "205094804721-597jsk3vb3uaaeq43rr3f8ftg45e1ahp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

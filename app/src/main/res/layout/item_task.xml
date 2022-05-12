@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/taskName"
+        style="@style/AppTheme.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxWidth="120dp"
+        android:maxLines="1"
+        android:textColor="@color/greySecondary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Saugen" />
+
+    <TextView
+        android:id="@+id/taskDivider"
+        style="@style/AppTheme.TextDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:text="@string/divider_bullet"
+        app:layout_constraintBottom_toBottomOf="@+id/taskName"
+        app:layout_constraintStart_toEndOf="@+id/taskName"
+        app:layout_constraintTop_toTopOf="@+id/taskName" />
+
+    <TextView
+        android:id="@+id/taskPeriodic"
+        style="@style/AppTheme.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:textColor="@color/greySecondary"
+        app:layout_constraintBottom_toBottomOf="@+id/taskName"
+        app:layout_constraintStart_toEndOf="@+id/taskDivider"
+        app:layout_constraintTop_toTopOf="@+id/taskName"
+        tools:text="periodic" />
+
+    <TextView
+        android:id="@+id/taskDivider2"
+        style="@style/AppTheme.TextDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:text="@string/divider_bullet"
+        app:layout_constraintBottom_toBottomOf="@+id/taskPeriodic"
+        app:layout_constraintStart_toEndOf="@+id/taskPeriodic"
+        app:layout_constraintTop_toTopOf="@+id/taskPeriodic" />
+
+    <TextView
+        android:id="@+id/taskOwner"
+        style="@style/AppTheme.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:textColor="@color/greySecondary"
+        app:layout_constraintBottom_toBottomOf="@+id/taskPeriodic"
+        app:layout_constraintStart_toEndOf="@+id/taskDivider2"
+        app:layout_constraintTop_toTopOf="@+id/taskPeriodic"
+        tools:text="Alex" />
+
+    <TextView
+        android:id="@+id/taskDescription"
+        style="@style/AppTheme.Subheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/greyPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskName"
+        tools:text="Mit dem Staubsauger durch die ganze Wohnung driven" />
+
+    <View
+        android:id="@+id/view4"
+        style="@style/AppTheme.Divider"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskDescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>
