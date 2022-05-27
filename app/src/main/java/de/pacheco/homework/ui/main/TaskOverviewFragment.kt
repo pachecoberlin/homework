@@ -140,7 +140,7 @@ class TaskOverviewFragment : Fragment(), TaskAdapter.OnTaskSelectedListener {
         adapter.stopListening()
     }
 
-    override fun onTaskSelected(restaurant: DocumentSnapshot) {
-        TODO("Not yet implemented")
+    override fun onTaskSelected(task: DocumentSnapshot) {
+        view?.let { Snackbar.make(it, "$task Clicked", Snackbar.LENGTH_LONG).show() }
     }
 }

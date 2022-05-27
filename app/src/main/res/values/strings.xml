@@ -4,4 +4,6 @@
     <string name="tab_text_2">Tab 2</string>
     <string name="message_no_results">No Results</string>
     <string name="divider_bullet">•</string>
+    <string name="save">save</string>
+    <string name="name">Name</string>
 </resources>
